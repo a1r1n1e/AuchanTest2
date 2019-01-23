@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_coordinator"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context="vovch.auchan_test.auchantest.activities.complex.Group2Activity"
+        android:background="@color/elementLayoutColor1">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/group_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/elementLayoutColor1">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_above="@+id/tabs_group">
+                <TextView
+                    android:id="@+id/group_name_textview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginStart="48dp"
+                    android:layout_weight="0.8"
+                    android:text="GROUP"
+                    android:maxLines="1"
+                    android:textAllCaps="false"
+                    android:textColor="@color/whoBuysGray"
+                    android:textSize="40sp"
+                    android:gravity="start"
+                    android:layout_gravity="center" />
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="0.2"
+                    android:layout_gravity="center|bottom">
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/group_settings_imagebutton"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="Settings"/>
+                    </FrameLayout>
+            </LinearLayout>
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabs_group"
+                app:tabTextAppearance="@style/TabsCustomTextAppearance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/elementLayoutColor1"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="94dp">
+            <android.support.v4.view.ViewPager
+                android:id="@+id/group_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/group_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/add_48" />
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="vovch.auchan_test.auchantest.activities.simple.GroupList2Activity"
+    android:background="@color/elementLayoutColor1">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/group_list_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@color/elementLayoutColor1">
+                <TextView
+                    android:id="@+id/group_list_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="0.8"
+                    android:text="@string/your_groups"
+                    android:maxLines="1"
+                    android:textAllCaps="false"
+                    android:textColor="@color/whoBuysGray"
+                    android:textSize="30sp"
+                    android:gravity="start"
+                    android:layout_gravity="center" />
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="72dp"
+        android:id="@+id/group_list_refresher">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:orientation="vertical"
+                android:id="@+id/groupsbaselayout">
+                <android.support.design.widget.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|start"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="24dp"
+                    android:id="@+id/group_add_fab"
+                    app:srcCompat="@mipmap/add_plus_custom_green_white"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:orientation="vertical"
+                    android:id="@+id/groupslayout">
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</android.support.constraint.ConstraintLayout>

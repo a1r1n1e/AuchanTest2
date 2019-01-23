@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "833324333686",
+    "firebase_url": "https://auchantest-c2b63.firebaseio.com",
+    "project_id": "auchantest-c2b63",
+    "storage_bucket": "auchantest-c2b63.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:833324333686:android:61aab041cf9fb621",
+        "android_client_info": {
+          "package_name": "vovch.auchan_test.auchantest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "833324333686-q3or4sahfgahlpra6ct904j1kskfcph2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkRK76I6s6TRonotq9IQague2XogZ6g4c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

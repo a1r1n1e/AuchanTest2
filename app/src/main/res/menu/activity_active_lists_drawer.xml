@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/additional">
+        <menu>
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@mipmap/groups_custom_people"
+                android:title="@string/profile" />
+            <item
+                android:id="@+id/nav_copy_id"
+                android:icon="@mipmap/copy_id_custom"
+                android:title="@string/copy_your_id" />
+        </menu>
+    </item>
+
+    <item android:title="@string/danger_zone">
+        <menu>
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@mipmap/exit_custom"
+                android:title="@string/exit" />
+            <item
+                android:id="@+id/nav_drop_history"
+                android:icon="@mipmap/drop_history_custom_white_gray"
+                android:title="@string/drop_history" />
+            <item
+                android:id="@+id/nav_troubleshot"
+                android:icon="@mipmap/bug_report_custom_white_gray"
+                android:title="@string/any_problem" />
+        </menu>
+    </item>
+
+</menu>
